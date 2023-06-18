@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Dark theme  CSS -->
+    <link rel="stylesheet" href="dark-theme.css" media="preference-color-scheme:dark-theme">
+
+    <!-- JS -->
+    <script src="script.js" defer></script>
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <main>
+        <section class="Calculator">
+            <div class="container">
+                <div class="calculator-contaier">
+                    <div class="first-part">
+                        <i class="fa-solid fa-bars"></i>
+                        <div class="theme-change-container">
+                            <div class="theme-circle " data-theme>
+                                <i class="fa-regular fa-moon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-part">
+
+                        <p class="result"></p>
+                        <p class="expression" data-screen></p>
+                        <span class="expression-error"></span>
+                    </div>
+                    <div class="last-part" data-calculator>
+                        <button class="square btns">%</button>
+                        <button class="square" data-clear-Element>CE</button>
+                        <button class="square" data-clear-all>AC</button>
+                        <button class="square btns">/</button>
+                        <button class="square number btns ">7</button>
+                        <button class="square number btns">8</button>
+                        <button class="square number btns">9</button>
+                        <button class="square btns">X</button>
+                        <button class="square number btns">4</button>
+                        <button class="square number btns">5</button>
+                        <button class="square number btns">6</button>
+                        <button class="square btns">-</button>
+                        <button class="square number btns">1</button>
+                        <button class="square number btns">2</button>
+                        <button class="square number btns">3</button>
+                        <button class="square btns">+</button>
+                        <button class="square btns">-/+</button>
+                        <button class="square number btns">0</button>
+                        <button class="square number btns">.</button>
+                        <button class="square equalto" data-result>=</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

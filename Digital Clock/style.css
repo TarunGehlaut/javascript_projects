@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+span,
+img,
+button,
+input {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+button {
+  border: none;
+  background: none;
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #131313;
+}
+
+/* Reusable Style */
+
+.container {
+  padding-inline: 32px;
+}
+
+.heading {
+  color: white;
+  /* text-align: center; */
+  font-size: 36px;
+  line-height: 1.45;
+  padding-bottom: 32px;
+}
+
+.main-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Clock Css */
+
+.container .digital-clock-wrapper {
+  display: flex;
+  gap: 28px;
+}
+
+.Clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.timing-title {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+.time-container {
+  background-color: #444;
+  color: white;
+  font-size: 32px;
+  height: 64px;
+  width: 64px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin-inline: auto;
+  }
+
+  .time-container {
+    height: 77px;
+    width: 77px;
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 980px;
+  }
+
+  .time-container {
+    height: 88px;
+    width: 88px;
+    font-size: 52px;
+  }
+
+  .timing-title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1450px;
+  }
+}
